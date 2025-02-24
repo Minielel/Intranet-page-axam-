@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>AgileSoft - Start</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">AgileSoft</div>
+        <nav>
+            <div class="search-bar">
+                <input placeholder="Suche..." type="text"/>
+                <button>Suchen</button>
+            </div>
+            <a href="start.html">Start</a>
+            <a href="personliches.html">Persönliches</a>
+            <a href="itsupport.html">IT-Support</a>
+            <a href="workstation.html">Workstations</a>
+            <a href="ticketsystem.html">Ticketsystem</a>
+            <a href="mitarbeiter.html">Mitarbeiter</a>
+            <a href="entwickler.html">Entwickler</a>
+           
+        </nav>
+    </header>
+    <main class="main">
+        <div class="content">
+            <section class="section" id="workstation">
+                <h2>Workstation</h2>
+                <div class="office-pc-image">
+                    <img src="STSMedia-Office-PC.jpg" alt="Office PC Konfiguration" style="max-width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <p class="image-caption" style="text-align: center; color: #666; margin-bottom: 20px;">Standard Office-PC Konfiguration</p>
+                </div>
+                <form>
+                 <div class="form-group">
+                  <label for="cpu">
+                   CPU
+                  </label>
+                  <select id="cpu" name="cpu">
+                    <optgroup label="Intel">
+                        <option value="intel-13500">Intel i5-13500 (€269) - Optimal für Office &amp; Multitasking</option>
+                        <option value="intel-13400">Intel i5-13400 (€229) - Standard Office-Empfehlung</option>
+                        <option value="intel-13100">Intel i3-13100 (€149) - Basis Office-PC</option>
+                        <option value="intel-g7400">Intel Pentium G7400 (€89) - Einfache Büroarbeiten</option>
+                    </optgroup>
+                    <optgroup label="AMD">
+                        <option value="amd-7600">AMD Ryzen 5 7600 (€229) - Leistungsstark für Office</option>
+                        <option value="amd-5600">AMD Ryzen 5 5600 (€159) - Preis-Leistungs-Tipp</option>
+                        <option value="amd-4600g">AMD Ryzen 5 4600G (€129) - Integrierte Grafik</option>
+                        <option value="amd-4300g">AMD Ryzen 3 4300G (€99) - Sparsame Option</option>
+                    </optgroup>
+                  </select>
+                 </div>
+                 <div class="form-group">
+                  <label for="motherboard">
+                   Motherboard
+                  </label>
+                  <select id="motherboard" name="motherboard">
+                   <option value="">
+                    Bitte wählen Sie eine CPU aus
+                   </option>
+                  </select>
+                 </div>
+                 <div class="form-group">
+                  <label for="ram">
+                   RAM
+                  </label>
+                  <select id="ram" name="ram">
+                    <optgroup label="DDR4">
+                        <option value="ddr4-32gb-3200">32GB DDR4-3200 (€109) - Zukunftssicher</option>
+                        <option value="ddr4-16gb-3200">16GB DDR4-3200 (€59) - Standard-Empfehlung</option>
+                        <option value="ddr4-8gb-3200">8GB DDR4-3200 (€35) - Minimum</option>
+                    </optgroup>
+                  </select>
+                 </div>
+                 <div class="form-group">
+                  <label for="storage">
+                   Speicher
+                  </label>
+                  <select id="storage" name="storage">
+                    <optgroup label="SSD">
+                        <option value="ssd-1tb">1TB SATA SSD (€79) - Viel Speicherplatz</option>
+                        <option value="ssd-500gb">500GB SATA SSD (€49) - Standard-Empfehlung</option>
+                        <option value="ssd-256gb">256GB SATA SSD (€29) - Basis</option>
+                    </optgroup>
+                    <optgroup label="Festplatten">
+                        <option value="hdd-2tb">2TB HDD (€59) - Dokumentenarchiv</option>
+                        <option value="hdd-1tb">1TB HDD (€39) - Zusatzspeicher</option>
+                    </optgroup>
+                  </select>
+                 </div>
+                 <div class="form-group">
+                    <label for="gpu">Grafik</label>
+                    <select id="gpu" name="gpu">
+                        <option value="integrated">Integrierte CPU-Grafik (€0) - Standard Office</option>
+                        <optgroup label="Dedizierte Grafikkarten">
+                            <option value="nvidia-t1000">NVIDIA T1000 (€259) - CAD/3D-Arbeit</option>
+                            <option value="nvidia-t600">NVIDIA T600 (€169) - Mehrere Monitore</option>
+                            <option value="amd-wx3200">AMD WX3200 (€149) - 2D/3D-Design</option>
+                        </optgroup>
+                    </select>
+                </div>
+                 <div class="form-group">
+                  <button type="submit">
+                   Zusammenstellen
+                  </button>
+                 </div>
+                </form>
+               </section>
+        </div>
+            <aside class="aside">
+                <div class="widget">
+                    <h3>IT-Störung</h3>
+                    <p>Details zur IT-Störung...</p>
+                </div>
+                <div class="widget">
+                    <h3>Anmelden</h3>
+                    <p>Angemeldet als: Benutzer</p>
+                    <button style="background-color: #ff9243; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Abmelden</button>
+                </div>
+                <div class="widget">
+                    <h3>Änderungen</h3>
+                    <p>Details zu Änderungen im Unternehmen...</p>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer">
+            <a href="impressum.html">Impressum</a>
+            <a href="agb.html">AGB</a>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+    </html>

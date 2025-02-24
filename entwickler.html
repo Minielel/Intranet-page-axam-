@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>AgileSoft - Start</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .main {
+        flex: 1;
+        display: flex;
+        padding: 140px 40px 60px 40px;
+    }
+
+    .footer {
+        background-color: #fff;
+        padding: 20px 40px;
+        text-align: center;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin-top: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="logo">AgileSoft</div>
+        <nav>
+            <div class="search-bar">
+                <input placeholder="Suche..." type="text"/>
+                <button>Suchen</button>
+            </div>
+            <a href="start.html">Start</a>
+            <a href="personliches.html">Persönliches</a>
+            <a href="itsupport.html">IT-Support</a>
+            <a href="workstation.html">Workstations</a>
+            <a href="ticketsystem.html">Ticketsystem</a>
+            <a href="mitarbeiter.html">Mitarbeiter</a>
+            <a href="entwickler.html">Entwickler</a>
+           
+        </nav>
+    </header>
+    <main class="main">
+        <div class="content">
+            <section class="section" id="entwickler">
+                <h2>Entwickler</h2>
+                
+                <h3>Code Styleguides</h3>
+                <div class="styleguide-section">
+                    <h4>Allgemeine Prinzipien</h4>
+                    <ul>
+                        <li>Verwende aussagekräftige Variablen- und Funktionsnamen</li>
+                        <li>Halte Funktionen klein und fokussiert (Single Responsibility)</li>
+                        <li>Kommentiere Code nur wenn nötig - guter Code ist selbsterklärend</li>
+                    </ul>
+
+                    <h4>Formatierung</h4>
+                    <ul>
+                        <li>Einrückung: 4 Leerzeichen oder 1 Tab</li>
+                        <li>Maximale Zeilenlänge: 80 Zeichen</li>
+                        <li>Leerzeile zwischen logischen Blöcken</li>
+                    </ul>
+
+                    <h4>Namenskonventionen</h4>
+                    <ul>
+                        <li>Klassen: PascalCase (BeispielKlasse)</li>
+                        <li>Funktionen/Methoden: camelCase (berechneErgebnis)</li>
+                        <li>Konstanten: UPPERCASE (MAX_WERT)</li>
+                    </ul>
+                </div>
+
+                <h3>Vorgehensmodelle</h3>
+                <div class="scrum-section">
+                    <h4>Scrum Framework</h4>
+                    <p>Scrum ist ein agiles Projektmanagement-Framework, das für die Entwicklung komplexer Produkte entwickelt wurde. Es basiert auf drei Grundpfeilern:</p>
+                    
+                    <ul>
+                        <li><strong>Transparenz:</strong> Alle wichtigen Aspekte des Prozesses müssen für alle Beteiligten sichtbar sein.</li>
+                        <li><strong>Überprüfung:</strong> Regelmäßige Kontrolle von Artefakten und Fortschritt.</li>
+                        <li><strong>Anpassung:</strong> Schnelle Reaktion auf Veränderungen und neue Erkenntnisse.</li>
+                    </ul>
+
+                    <h4>Scrum Rollen</h4>
+                    <ul>
+                        <li><strong>Product Owner:</strong> Verantwortlich für Produktvision und Backlog</li>
+                        <li><strong>Scrum Master:</strong> Prozessbegleiter und Hindernisentferner</li>
+                        <li><strong>Entwicklungsteam:</strong> Selbstorganisierte Gruppe, die das Produkt entwickelt</li>
+                    </ul>
+
+                    <h4>Scrum Events</h4>
+                    <ul>
+                        <li><strong>Sprint:</strong> 2-4 wöchiger Entwicklungszyklus</li>
+                        <li><strong>Daily Scrum:</strong> Tägliches 15-minütiges Meeting</li>
+                        <li><strong>Sprint Planning:</strong> Planung der Sprint-Ziele</li>
+                        <li><strong>Sprint Review:</strong> Präsentation der Ergebnisse</li>
+                        <li><strong>Sprint Retrospective:</strong> Prozessverbesserung</li>
+                    </ul>
+                </div>
+
+                <h3>Weitere Ressourcen</h3>
+                <div class="resources-section">
+                    <div class="resource-links">
+                        <h4>Software-Entwicklung</h4>
+                        <p>Informationen über verfügbare Software-Tools und Entwicklungsumgebungen.</p>
+                        <a href="software.html" class="resource-button">
+                            <button style="background-color: #ff9243; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin: 10px 0;">
+                                <i class="fas fa-code"></i> Software-Übersicht
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="resource-links">
+                        <h4>Linux-Entwicklung</h4>
+                        <p>Linux-spezifische Entwicklungsressourcen und Tools.</p>
+                        <a href="linux.html" class="resource-button">
+                            <button style="background-color: #ff9243; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin: 10px 0;">
+                                <i class="fab fa-linux"></i> Linux-Ressourcen
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+            <aside class="aside">
+                <div class="widget">
+                    <h3>IT-Störung</h3>
+                    <p>Details zur IT-Störung...</p>
+                </div>
+                <div class="widget">
+                    <h3>Anmelden</h3>
+                    <p>Angemeldet als: Benutzer</p>
+                    <button style="background-color: #ff9243; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Abmelden</button>
+                </div>
+                <div class="widget">
+                    <h3>Änderungen</h3>
+                    <p>Details zu Änderungen im Unternehmen...</p>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer">
+            <a href="impressum.html">Impressum</a>
+            <a href="agb.html">AGB</a>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+    </html>

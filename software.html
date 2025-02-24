@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>AgileSoft - Start</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .main {
+        flex: 1;
+        display: flex;
+        padding: 140px 40px 60px 40px;
+    }
+
+    .footer {
+        background-color: #fff;
+        padding: 20px 40px;
+        text-align: center;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .tool-category {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .tool-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+    .tool-card {
+        background: white;
+        padding: 1rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+    }
+
+    .tool-card:hover {
+        transform: translateY(-2px);
+    }
+
+    .tool-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .tool-header i {
+        margin-right: 0.5rem;
+        color: #ff9243;
+    }
+
+    .tool-actions {
+        margin-top: 1rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        background-color: #ff9243;
+        color: white;
+    }
+
+    .btn-secondary {
+        background-color: #e9ecef;
+        color: #212529;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="logo">AgileSoft</div>
+        <nav>
+            <div class="search-bar">
+                <input placeholder="Suche..." type="text"/>
+                <button>Suchen</button>
+            </div>
+            <a href="start.html">Start</a>
+            <a href="personliches.html">Persönliches</a>
+            <a href="itsupport.html">IT-Support</a>
+            <a href="workstation.html">Workstations</a>
+            <a href="ticketsystem.html">Ticketsystem</a>
+            <a href="mitarbeiter.html">Mitarbeiter</a>
+            <a href="entwickler.html">Entwickler</a>
+           
+        </nav>
+    </header>
+    <main class="main">
+        <div class="content">
+            <section class="section" id="software">
+                <h2>Entwickler Software</h2>
+                
+                <div class="tool-category">
+                    <h3>IDEs & Editoren</h3>
+                    <div class="tool-list">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <i class="fab fa-microsoft"></i>
+                                <h4>Visual Studio Code</h4>
+                            </div>
+                            <p>Leichtgewichtiger, aber leistungsstarker Code-Editor mit umfangreicher Erweiterungsunterstützung.</p>
+                            <div class="tool-actions">
+                                <a href="https://code.visualstudio.com/" class="btn btn-primary">Download</a>
+                                <a href="#" class="btn btn-secondary">Dokumentation</a>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <i class="fab fa-java"></i>
+                                <h4>IntelliJ IDEA</h4>
+                            </div>
+                            <p>Professionelle IDE für Java-Entwicklung mit fortschrittlichen Funktionen.</p>
+                            <div class="tool-actions">
+                                <a href="https://www.jetbrains.com/idea/" class="btn btn-primary">Download</a>
+                                <a href="#" class="btn btn-secondary">Dokumentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>Versionskontrolle</h3>
+                    <div class="tool-list">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <i class="fab fa-git-alt"></i>
+                                <h4>Git</h4>
+                            </div>
+                            <p>Verteiltes Versionskontrollsystem für Quellcode-Management.</p>
+                            <div class="tool-actions">
+                                <a href="https://git-scm.com/" class="btn btn-primary">Download</a>
+                                <a href="#" class="btn btn-secondary">Dokumentation</a>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <i class="fab fa-github"></i>
+                                <h4>GitHub Desktop</h4>
+                            </div>
+                            <p>GUI-Client für Git mit GitHub-Integration.</p>
+                            <div class="tool-actions">
+                                <a href="https://desktop.github.com/" class="btn btn-primary">Download</a>
+                                <a href="#" class="btn btn-secondary">Dokumentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>Entwickler-Tools</h3>
+                    <div class="tool-list">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <i class="fas fa-database"></i>
+                                <h4>Docker Desktop</h4>
+                            </div>
+                            <p>Container-Virtualisierungsplattform für Entwicklung und Deployment.</p>
+                            <div class="tool-actions">
+                                <a href="https://www.docker.com/products/docker-desktop" class="btn btn-primary">Download</a>
+                                <a href="#" class="btn btn-secondary">Dokumentation</a>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <i class="fas fa-code"></i>
+                                <h4>Postman</h4>
+                            </div>
+                            <p>API-Entwicklungs- und Testplattform.</p>
+                            <div class="tool-actions">
+                                <a href="https://www.postman.com/downloads/" class="btn btn-primary">Download</a>
+                                <a href="#" class="btn btn-secondary">Dokumentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+            <aside class="aside">
+                <div class="widget">
+                    <h3>IT-Störung</h3>
+                    <p>Details zur IT-Störung...</p>
+                </div>
+                <div class="widget">
+                    <h3>Anmelden</h3>
+                    <p>Angemeldet als: Benutzer</p>
+                    <button style="background-color: #ff9243; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Abmelden</button>
+                </div>
+                <div class="widget">
+                    <h3>Änderungen</h3>
+                    <p>Details zu Änderungen im Unternehmen...</p>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer">
+            <a href="impressum.html">Impressum</a>
+            <a href="agb.html">AGB</a>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>AgileSoft - Start</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">AgileSoft</div>
+        <nav>
+            <div class="search-bar">
+                <input placeholder="Suche..." type="text"/>
+                <button>Suchen</button>
+            </div>
+            <a href="start.html">Start</a>
+            <a href="personliches.html">Persönliches</a>
+            <a href="itsupport.html">IT-Support</a>
+            <a href="workstation.html">Workstations</a>
+            <a href="ticketsystem.html">Ticketsystem</a>
+            <a href="mitarbeiter.html">Mitarbeiter</a>
+            <a href="entwickler.html">Entwickler</a>
+           
+        </nav>
+    </header>
+    <main class="main">
+        <div class="content">
+            <section class="section" id="ticketsystem">
+                <h2>
+                 Neues Ticket
+                </h2>
+                <form action="https://intranet.bib.de/screen/web/testmail_get.php">
+                 <div class="form-group">
+                  <label for="title">Titel *</label>
+                  <input id="title" name="title" required type="text"/>
+                 </div>
+                 <div class="form-group">
+                  <label for="text">Text *</label>
+                  <textarea id="text" name="text" required rows="4"></textarea>
+                 </div>
+                 <div class="form-group">
+                  <label for="status">
+                   Status
+                  </label>
+                  <select id="status" name="status" required="">
+                   <option value="normal">
+                    Normal
+                   </option>
+                   <option value="dringend">
+                    Dringend
+                   </option>
+                  </select>
+                 </div>
+                 <div class="form-group">
+                  <label for="type">
+                   Art des Tickets
+                  </label>
+                  <select id="type" name="type" required="">
+                   <option value="anfrage">
+                    Anfrage
+                   </option>
+                   <option value="störung">
+                    Störung
+                   </option>
+                   <option value="idee">
+                    Idee
+                   </option>
+                   <option value="beschaffung">
+                    Beschaffung
+                   </option>
+                  </select>
+                 </div>
+                 <div class="form-group">
+                  <button type="submit">
+                   Absenden
+                  </button>
+                 </div>
+                </form>
+               </section>
+        </div>
+            <aside class="aside">
+                <div class="widget">
+                    <h3>IT-Störung</h3>
+                    <p>Details zur IT-Störung...</p>
+                </div>
+                <div class="widget">
+                    <h3>Anmelden</h3>
+                    <p>Angemeldet als: Benutzer</p>
+                    <button style="background-color: #ff9243; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Abmelden</button>
+                </div>
+                <div class="widget">
+                    <h3>Änderungen</h3>
+                    <p>Details zu Änderungen im Unternehmen...</p>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer">
+            <a href="impressum.html">Impressum</a>
+            <a href="agb.html">AGB</a>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+    </html>

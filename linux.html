@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>AgileSoft - Start</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .main {
+        flex: 1;
+        display: flex;
+        padding: 140px 40px 60px 40px;
+    }
+
+    .footer {
+        background-color: #fff;
+        padding: 20px 40px;
+        text-align: center;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin-top: auto;
+    }
+
+    /* Updated table styles */
+    .command-table th:first-child,
+    .command-table td:first-child {
+        background-color: #f3f4f6;
+        width: 20%;
+        font-weight: 600;
+        border-right: 2px solid #e5e7eb;
+    }
+
+    .command-table th:nth-child(2),
+    .command-table td:nth-child(2) {
+        background-color: #fafafa;
+        width: 45%;
+        padding-left: 1.5rem;
+        border-right: 2px solid #e5e7eb;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .command-table th:last-child,
+    .command-table td:last-child {
+        background-color: #f8f9fa;
+        width: 35%;
+        font-family: 'Courier New', monospace;
+        color: #374151;
+    }
+
+    .command-table tr:hover td:first-child {
+        background-color: #e5e7eb;
+    }
+
+    .command-table tr:hover td:nth-child(2) {
+        background-color: #f3f4f6;
+    }
+
+    .command-table tr:hover td:last-child {
+        background-color: #eef2ff;
+    }
+
+    .command-table th {
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        letter-spacing: 0.05em;
+        background-color: #f3f4f6;
+        border-bottom: 2px solid #e5e7eb;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="logo">AgileSoft</div>
+        <nav>
+            <div class="search-bar">
+                <input placeholder="Suche..." type="text"/>
+                <button>Suchen</button>
+            </div>
+            <a href="start.html">Start</a>
+            <a href="personliches.html">Persönliches</a>
+            <a href="itsupport.html">IT-Support</a>
+            <a href="workstation.html">Workstations</a>
+            <a href="ticketsystem.html">Ticketsystem</a>
+            <a href="mitarbeiter.html">Mitarbeiter</a>
+            <a href="entwickler.html">Entwickler</a>
+          
+        </nav>
+    </header>
+    <main class="main">
+        <div class="flex">
+            <section class="section w-[75%] mx-auto px-16 py-12" id="linux">
+                <h2 class="mb-8 text-2xl">Linux</h2>
+                <h3 class="mb-6 text-xl">Dateisystem Befehle</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-white border-collapse border border-gray-300 mx-auto command-table">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border border-gray-300 px-10 py-6 text-left text-lg">Befehl</th>
+                                <th class="border border-gray-300 px-10 py-6 text-left text-lg">Beschreibung</th>
+                                <th class="border border-gray-300 px-10 py-6 text-left text-lg">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-300">
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-10 py-6 font-medium text-base">ls</td>
+                                <td class="border border-gray-300 px-10 py-6 text-base">Listet Dateien und Verzeichnisse auf</td>
+                                <td class="border border-gray-300 px-10 py-6 font-mono text-base">ls -l</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-10 py-6 font-medium text-base">cd</td>
+                                <td class="border border-gray-300 px-10 py-6 text-base">Wechselt das Verzeichnis</td>
+                                <td class="border border-gray-300 px-10 py-6 font-mono text-base">cd /home/user</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-10 py-6 font-medium text-base">pwd</td>
+                                <td class="border border-gray-300 px-10 py-6 text-base">Zeigt das aktuelle Verzeichnis an</td>
+                                <td class="border border-gray-300 px-10 py-6 font-mono text-base">pwd</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-10 py-6 font-medium text-base">mkdir</td>
+                                <td class="border border-gray-300 px-10 py-6 text-base">Erstellt ein neues Verzeichnis</td>
+                                <td class="border border-gray-300 px-10 py-6 font-mono text-base">mkdir neues_verzeichnis</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-10 py-6 font-medium text-base">rm</td>
+                                <td class="border border-gray-300 px-10 py-6 text-base">Löscht Dateien oder Verzeichnisse</td>
+                                <td class="border border-gray-300 px-10 py-6 font-mono text-base">rm -r verzeichnis</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-10 py-6 font-medium text-base">cp</td>
+                                <td class="border border-gray-300 px-10 py-6 text-base">Kopiert Dateien oder Verzeichnisse</td>
+                                <td class="border border-gray-300 px-10 py-6 font-mono text-base">cp datei.txt ziel/</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-10 py-6 font-medium text-base">mv</td>
+                                <td class="border border-gray-300 px-10 py-6 text-base">Verschiebt oder benennt Dateien um</td>
+                                <td class="border border-gray-300 px-10 py-6 font-mono text-base">mv alt.txt neu.txt</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-10 py-6 font-medium text-base">cat</td>
+                                <td class="border border-gray-300 px-10 py-6 text-base">Zeigt den Inhalt einer Datei an</td>
+                                <td class="border border-gray-300 px-10 py-6 font-mono text-base">cat datei.txt</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-10 py-6 font-medium text-base">grep</td>
+                                <td class="border border-gray-300 px-10 py-6 text-base">Sucht nach Mustern in Dateien</td>
+                                <td class="border border-gray-300 px-10 py-6 font-mono text-base">grep "text" datei.txt</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <aside class="aside ml-12 w-[20%]">
+                <div class="widget">
+                    <h3>IT-Störung</h3>
+                    <p>Details zur IT-Störung...</p>
+                </div>
+                <div class="widget">
+                    <h3>Anmelden</h3>
+                    <p>Angemeldet als: Benutzer</p>
+                    <button style="background-color: #ff9243; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Abmelden</button>
+                </div>
+                <div class="widget">
+                    <h3>Änderungen</h3>
+                    <p>Details zu Änderungen im Unternehmen...</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">AGB</a>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
